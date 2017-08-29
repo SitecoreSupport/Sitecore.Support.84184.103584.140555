@@ -5,8 +5,7 @@
             window.onload = function () {
                 var element = window.document.getElementById("scFieldValues");
                 var inputs = scFieldValues.getElementsByTagName("input");
-                for (var i = 0; i < inputs.length; i++) {
-                    console.log(inputs[i].attributes['value'].value);
+                for (var i = 0; i < inputs.length; i++) {                   
                     if (inputs[i].attributes['value'].value == "<br>") {
                         inputs[i].attributes['value'].value = inputs[i].attributes['value'].value.replace("<br>", "");
                         var fld = window.document.getElementById(inputs[i].attributes['id'].value + "_edit");
